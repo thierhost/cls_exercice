@@ -167,13 +167,13 @@
       <main>
     
         
-        <section class="container">
-            <div class="image-hero"  style="">
-                <div class="img" id="image-hero" style="margin:2% ; display: flex; justify-content: space-evenly;" >
+        <section class="container hero-container">
+            <div class="image-hero">
+                <div class="img" id="image-hero" >
                 </div>
                 
             </div>
-            <div style="display: flex; flex-direction: column; justify-content:center; margin:2% ;">
+            <div class="hero-text">
               <h1>Senegal Winning the world cup 2022</h1>
               <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid laudantium dolorum laboriosam, vel corrupti modi ullam quidem tenetur fuga minima aliquam! Quisquam, exercitationem pariatur inventore expedita in sequi facere.
@@ -364,7 +364,7 @@
               iframe.setAttribute('width', '400')
               iframe.setAttribute('height', '450')
               const imageHeroDiv = document.getElementById('image-hero');
-              imageHeroDiv.appendChild(iframe)
+              imageHeroDiv.insertBefore(iframe, imageHeroDiv.firstChild)
               // dynamic content
               
             }, 5000)
